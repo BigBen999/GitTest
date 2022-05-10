@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+
+
+<body>
+		<h1>Probando probando</h1>
+
+		<p id="paragraph">
+			
+		</p>
+
+		<button id="button">Enviar</button>
+		<script type="text/javascript">
+			const paragraphInicial = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+
+			const paragraph = document.getElementById ("paragraph")
+			paragraph.innerHTML=paragraphInicial;
+			let cambiado=false;
+			
+			const button = document.getElementById('button');
+
+			button.onclick = function () {
+				const paragraph = document.getElementById("paragraph");
+				if (cambiado===true) 
+				{
+					paragraph.innerHTML=paragraphInicial;
+
+					cambiado=false;
+
+				}
+
+				else{
+
+					paragraph.innerHTML = "enviado";
+				
+					cambiado=true;
+
+					
+
+				}
+
+				
+
+			};
+			
+
+		</script>
+</body>
+</html>
